@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Repo: ${env.GIT_URL}"
                 echo "Branch: ${env.BRANCH_NAME}"
-                echo "hello"
+                sh 'mkdir testfolder'
             }
         }
     }
