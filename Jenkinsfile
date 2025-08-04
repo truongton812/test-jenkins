@@ -1,10 +1,10 @@
 pipeline {
     agent any
-
     stages {
-        stage('Hello') {
+        stage('Info') {
             steps {
-                echo 'Hello World'
+                echo "Repo: ${env.GIT_URL}"
+                echo "Branch: ${env.BRANCH_NAME}"
             }
         }
     }
